@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-nonprofit",
-  "version": "1.0.0",
-  "description": "Non-Profit Fundraising Manager — Donorbox/Givebutter/Neon CRM for donor relationships, campaigns, impact reports",
+  "version": "1.0.1",
+  "description": "Non-Profit Fundraising Manager \u2014 Donorbox/Givebutter/Neon CRM for donor relationships, campaigns, impact reports",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,15 +9,26 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-nonprofit",
   "homepage": "https://cortexprism.io/marketplace/plugins/nonprofit",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "npo_track_donors",
       "description": "Track donor relationships and history",
       "params": []
     },
-    { "name": "npo_manage_campaign", "description": "Manage fundraising campaign", "params": [] },
-    { "name": "npo_generate_report", "description": "Generate impact report", "params": [] },
+    {
+      "name": "npo_manage_campaign",
+      "description": "Manage fundraising campaign",
+      "params": []
+    },
+    {
+      "name": "npo_generate_report",
+      "description": "Generate impact report",
+      "params": []
+    },
     {
       "name": "npo_identify_lapsed",
       "description": "Identify lapsed donors for re-engagement",
@@ -25,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
